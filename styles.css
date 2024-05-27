@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.circle-btn {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    background-color: gray;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.circle-btn:active {
+    transform: scale(0.9);
+    background-color: #cccccc;
+}
+
+.rect-btn {
+    width: 350px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 20px;
+}
+
+.rect-btn:active {
+    transform: scale(0.95);
+    background-color: #ffcc66;
+}
+
+.small-circle-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: gray;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.small-circle-btn:active {
+    transform: scale(0.9);
+    background-color: #cccccc;
+}
