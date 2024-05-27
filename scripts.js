@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let folderIndex = 1;
 
     function playAudio(file) {
-        const audio = new Audio(`my_music_app/blob/main/audio${folderIndex}/${file}`);
-        console.log(`Playing: my_music_app/blob/main/audio${folderIndex}/${file}`);
+        const audio = new Audio(`my_music_app/audio${folderIndex}/${file}`);
+        console.log(`Playing: my_music_app/audio${folderIndex}/${file}`);
       
     }
 
@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('btn8').addEventListener('click', () => {
         folderIndex = folderIndex % 6 + 1;
-        console.log(`Switched to folder: my_music_app/blob/main/audio1${folderIndex}`);
+        console.log(`Switched to folder: my_music_app/audio1${folderIndex}`);
     });
 });
