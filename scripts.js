@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let folderIndex = 1;
 
     function playAudio(file) {
-        const audio = new Audio(`audio${folderIndex}/${file}`);
-        console.log(`Playing: audio${folderIndex}/${file}`);
+        const audio = new Audio(`my_music_app/audio${folderIndex}/${file}`);
+        console.log(`Playing: my_music_app/audio1${folderIndex}/${file}`);
         audio.play().catch(error => {
             console.error("Error playing audio:", error);
         });
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('btn8').addEventListener('click', () => {
         folderIndex = folderIndex % 6 + 1;
-        console.log(`Switched to folder: audio${folderIndex}`);
+        console.log(`Switched to folder: my_music_app/audio1${folderIndex}`);
     });
 });
 // scripts.js
