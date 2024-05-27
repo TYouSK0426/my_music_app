@@ -22,33 +22,3 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(`Switched to folder: my_music_app/audio1${folderIndex}`);
     });
 });
-// scripts.js
-let currentFolder = 1;
-
-const buttons = document.querySelectorAll('.circle, .rectangle');
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const buttonId = button.id;
-        if (buttonId === 'button8') {
-            currentFolder = currentFolder === 6 ? 1 : currentFolder + 1;
-            console.log(`Current folder: audio${currentFolder}`);
-        } else {
-            const audioIndex = buttonId.replace('button', '');
-            const audioPath = `assets/audio${currentFolder}/b${audioIndex}.mp3`;
-            console.log(`Attempting to play: ${audioPath}`);
-            const audio = new Audio(audioPath);
-            audio.play()
-                .then(() => {
-                    console.log(`Playing: ${audioPath}`);
-                })
-                .catch(error => {
-                    console.error(`Error playing audio: ${audioPath}`, error);
-                });
-
-            button.classList.add('pressed');
-            setTimeout(() => {
-                button.classList.remove('pressed');
-            }, 200);
-        }
-    });
-});
