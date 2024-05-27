@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function playAudio(file) {
         const audio = new Audio(`my_music_app/blob/main/audio${folderIndex}/${file}`);
-        console.log(`Playing: my_music_app/blob/mainaudio1${folderIndex}/${file}`);
+        console.log(`Playing: my_music_app/blob/main/audio1${folderIndex}/${file}`);
       
     }
 
