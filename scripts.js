@@ -4,9 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function playAudio(file) {
         const audio = new Audio(`my_music_app/audio${folderIndex}/${file}`);
         console.log(`Playing: my_music_app/audio1${folderIndex}/${file}`);
-        audio.play().catch(error => {
-            console.error("Error playing audio:", error);
-        });
+      
     }
 
     document.getElementById('btn1').addEventListener('click', () => playAudio('b1.mp3'));
